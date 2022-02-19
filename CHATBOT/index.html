@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Boon</title>
+	<link rel="icon" href="bot.png" />
+	<link rel="stylesheet" href="style.css" />
+	
+</head>
+
+<body>
+	<section class="section parallax">
+		
+		<css-doodle>
+			:doodle {
+			  @grid: 30 / 100% 620px;
+			}
+			
+			transition: @rand(300ms) ease;
+		  
+			background: @pick(
+			  #F9D1D5, #FFFBC7, #EABCF5,#DDF8C9,#B4E5FF
+			);
+		  
+			clip-path: polygon(@pick(
+			  '0 0, 100% 0, 100% 100%',
+			  '0 0, 100% 0, 0 100%',
+			  '0 0, 100% 100%, 0 100%',
+			  '100% 0, 100% 100%, 0 100%'
+			  ));
+			
+			/* the sub-pixel problem */
+			margin: -.2px;
+		  </css-doodle>
+		  	
+		<h1>
+			<img src="boon.png">
+		</h1>
+</section>
+
+	<div id="container" class="container">
+		<div id="chat" class="chat">
+			<div id="messages" class="messages"></div>
+			<input id="input" type="text" placeholder="Talk to Nala..." autocomplete="off" autofocus="true" />
+		</div>
+		<img src="tiger.png" alt="Robot cartoon" height="500vh">
+	</div>
+		
+	
+	<ul class="side-menu">
+		
+		<li><a href="#"><span class="fa fa-home fa-4x"></span> Home Page </a></li>
+		<li><a href="#"><span class="fa fa-clock-o fa-4x"></span> Pomodoro </a></li>
+		<li><a href="#"><span class="fa fa-bar-chart fa-4x"></span> Statistics </a></li>
+		<li><a href="#"><span class="fa fa-calendar-check-o fa-4x"></span> Calendar </a></li>
+		<li><a href="#"><span class="fa fa-cogs fa-4x"></span>  Settings </a></li>
+
+		</ul>
+
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+<script type="text/javascript" src="index.js" ></script>
+<script type="text/javascript" src="constants.js" ></script>
+<script type="text/javascript" src="speech.js" ></script>
+<script type="text/javascript" src="doodle.js" ></script>
+<script src="https://use.fontawesome.com/c00f343a72.js"></script>
+<script src="https://unpkg.com/css-doodle@0.24.2/css-doodle.min.js"></script>
+​
+
+
+</html>

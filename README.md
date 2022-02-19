@@ -1,1 +1,2 @@
-# SEP-Project
+# SEP_Project
+SEP project

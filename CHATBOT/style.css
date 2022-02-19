@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 10vh;
+ 	height: 100%;
+	
+
+	margin: 0;
+}
+
+
+span {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.container {
+	display: flex;
+  justify-content: right;
+	align-items: center;
+	width: 98%;
+	height: 100%;
+	background-image: url('work12.png');
+	background-size: 500px;
+}
+
+
+.container1 css-doodle {
+margin: 0;
+background-color: white;
+  
+  
+}
+.section h1 img{
+	z-index: 1;
+	position:absolute;
+	align-items: center;
+	width:50%; 
+	top: 10px;
+	height: 45%;
+	margin: 100px;
+	margin-left: 350px;
+}
+.chat {
+	height: 300px;
+	width: 40vw;
+	color: black;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+  justify-content: right;
+	align-items: center;
+	
+} 
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+::-webkit-input-placeholder { 
+	color: .711 
+}
+ 
+input { 
+	border-color: black; 
+	padding: 15px; 
+	margin-left: auto;
+	border-radius: 10px; 
+}
+
+.messages {
+	display:flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 95%;
+	left: 1000px;
+	background-color: #c4c3d0;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 20px;
+}
+
+#bot {
+	margin-left: auto;
+}
+
+.bot {
+	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+	monospace;
+}
+
+.avatar {
+	height: 25px;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+.side-menu {
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 2px;
+  padding: 0;
+  height: 100%;
+  width: 80px;
+  list-style-type: none;
+  background: #c95a49;
+  overflow: hidden;
+  transition: width .4s;
+}
+
+.side-menu:hover {
+  width: 250px;
+}
+
+.side-menu li {
+  width: 300px;
+}
+
+.side-menu li span {
+  font-size: 1.5rem;
+  margin: 20px 30px 0 10px;
+}
+
+.side-menu li a {
+  display: block;
+  font-size: .9rem;
+  text-decoration: none;
+  color: #FFF;
+  height: 60px;
+}
+
+.side-menu li a:hover,
+.side-menu li:first-child a {
+  background: #3d0c02;
+  display: block;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1262px) {
+  .container {
+		flex-direction: column; 
+		justify-content: flex-start;
+		
+	}
+
+	.section h1 img{
+		flex-direction: column; 
+		justify-content: flex-start;
+		width:40%;
+		height:25%;
+
+	}
+
+	.chat {
+		width: 70vw;
+		height: 17vh;
+		margin: 10vw;
+	}
+}
